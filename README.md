@@ -19,25 +19,25 @@ include jade-injected/jade-injected
 ## Usage
 Mixin
 ```jade
-mixin parrent()
+mixin parent()
     +injected: block
-    .parrent
+    .parent
         +if('top')
-            .parrent__top
+            .parent__top
                 +use('top')
         +if('box')
-            .parrent__boxes
+            .parent__boxes
                 +each('box')
-                    .parrent__box
+                    .parent__box
                         +use('box')
         +else('box')
-            .parrent__empty
+            .parent__empty
                 | Box is not inject
 
 ```
 Usage
 ```jade
-+parrent()
++parent()
     +inject('top')
         | Text for top position
     +inject('box')
@@ -47,7 +47,7 @@ Usage
 ```
 Result
 ```html
-<div class="parrent">
+<div class="parent">
     <div class="position-top">Text for top position</div>
     <div class="position-boxes">
         <div class="position-box">Text for first box</div>
@@ -63,7 +63,7 @@ Since it's a temporary fix, there are some limitations.
 ### Do not use a `block` if `+injected` called in mixin
 
 ```jade
-mixin parrent()
+mixin parent()
     +injected: block
 ```
 
@@ -72,7 +72,7 @@ mixin parrent()
 this expamle has error
 ```
 ```jade
-+parrent()
++parent()
     +inject('top')
         | Text for top position
     each item in boxes
@@ -109,9 +109,9 @@ Each injected blocks
     +use('box')
 ```
 ### Inject
-Injected blocks into parrent mixin
+Injected blocks into parent mixin
 ```jade
-+parrent
++parent
     +inject('box')
         | content
 ```
