@@ -14,7 +14,9 @@ include jade-injected/jade-injected
 ```
 
 ## NPM
-### https://www.npmjs.com/package/jade-injected
+```cmd
+npm i -D jade-injected
+```
 
 ## Usage
 Mixin
