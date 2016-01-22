@@ -2,20 +2,14 @@
 
 These mixins are for injecting child blocks in the parent mixin. Please, mind that this solution is temporary and I'm really looking forward to the Jade's 2.x.x release with a support for Multiple Blocks in Mixins.
 
-
 ## Installation
-Clone jade-injected to your project
+Install jade-injected package to your project
 ```cmd
-git clone git://github.com/CSSSR/jade-injected.git
+npm i -D jade-injected
 ```
 Include jade file to your project
 ```jade
-include jade-injected/jade-injected
-```
-
-## NPM
-```cmd
-npm i -D jade-injected
+include NODE_MODULES_PATH/jade-injected/jade-injected
 ```
 
 ## Usage
