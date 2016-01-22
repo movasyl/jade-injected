@@ -1,0 +1,30 @@
+{
+  "name": "jade-injected",
+  "version": "1.0.2",
+  "description": "Mixins for inject child blocks in parent mixin",
+  "main": "./jade-injected.jade",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSSSR/jade-injected.git"
+  },
+  "author": "Pavel Yagodin <pavel.yagodin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CSSSR/jade-injected/issues"
+  },
+  "homepage": "https://github.com/CSSSR/jade-injected#readme",
+  "keywords": [
+    "jade",
+    "mixin",
+    "inject",
+    "blocks",
+    "block",
+    "multiple"
+  ],
+  "devDependencies": {
+    "jade": "1.9.x"
+  }
+}
