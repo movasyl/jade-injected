@@ -56,14 +56,14 @@ Result
 
 Since it's a temporary fix, there are some limitations.
 
-### Do not use a `block` if `+injected` called in mixin
+### Don't use a `block` if `+injected` called in mixin
 
 ```jade
 mixin parent()
     +injected: block
 ```
 
-### Do not use data cycles (hopefully will be fixed soon)
+### Don't use data cycles (hopefully will be fixed soon)
 ```json
 this expamle has error
 ```
